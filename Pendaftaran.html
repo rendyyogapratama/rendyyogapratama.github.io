@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Pendaftaran Mahasiswa Baru</title>
+</head>
+
+<style>
+    body {
+        background-image: url(assets/img/pmb-2.png);
+    }
+</style>
+
+<body>
+    <center>
+        <img src="assets/img/pmb.png" alt="header" width="1140px" height="350px"  >
+    </center>
+    <div style="background-color: white" class="container p-3 my-3 border">
+        <h1 class="text-center">FORM PENDAFTARAN MAHASISWA BARU</h1>
+        <form id="form" method="POST">
+            <div class="alert alert-primary">
+                <strong>DATA DIRI</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="form-group">
+                        <label>Nama Lengkap :</label>
+                        <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label>Nomor Identitas (NIK) :</label>
+                        <input type="text" name="nik" class="form-control" placeholder="Masukan Nomor NIK">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Tempat Lahir :</label>
+                        <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Tanggal Lahir :</label>
+                        <input type="date" name="tanggal_lahir" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Status :</label>
+                        <select class="form-control" name="status">
+                            <option>Pilih</option>
+                            <option value="Belum Menikah">Belum Menikah</option>
+                            <option value="Menikah">Menikah</option>
+                            <option value="Duda">Duda</option>
+                            <option value="Janda">Janda</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label>Jenis Kelamin :</label>
+                        <br>
+                        <input type="radio" name="jk" value="Laki-laki"> laki-laki
+                        <br>
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label>Agama :</label>
+                        <select class="form-control" name="agama">
+                            <option>Pilih</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label>Kewarganegaraan :</label>
+                            <br>
+                            <input type="radio" name="kwn" value="WNI"> Warga Negara Indonesia (WNI)
+                            <br>
+                            <input type="radio" name="kwn" value="WNI"> Warga Negara Indonesia (WNA)
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label>E-mail :</label>
+                            <input type="email" name="email" class="form-control" placeholder="Masukan E-mail">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>Nomor Handphone :</label>
+                            <input type="text" name="no_hp" class="form-control" placeholder="Masukan Nomor Handphone">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Nama Ibu Kandung :</label>
+                            <input type="text" name="nama_ibu" class="form-control" placeholder="Masukan Nama Ibu Kandung">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-primary">
+                    <strong>DATA ALAMAT DOMISILI</strong>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                        <label>Alamat Rumah :</label>
+                        <textarea class="form-control" name="alamat_rumah" rows="2" id="alamat"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Kode Pos</label>
+                        <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label>Kecamatan</label>
+                        <input type="text" name="kecamatan" class="form-control" placeholder="Masukan Kecamatan">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label>Kabupaten/Kota :</label>
+                        <input type="text" name="kabupaten" class="form-control" placeholder="Masukan Kabupaten/Kota">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label>Provinsi :</label>
+                        <input type="text" name="provinsi" class="form-control" placeholder="Masukan Provinsi">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
